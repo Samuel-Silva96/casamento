@@ -109,6 +109,9 @@ body {
 ol,
 ul {
     list-style: none;
+    /* Resetando espaçamento interno e externo do Bootstrap */
+    padding-left: 0rem !important;
+    margin-bottom: 0rem !important;
 }
 
 blockquote,
@@ -128,3 +131,54 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/* Inicio Header */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    height: 38px;
+    font-size: 15px;
+}
+
+ul,
+li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Final Header */
+
+/* Inicio Primeiro-box */
+
+
+.primeiro-box {
+    background-image: url(./img/Fundo.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #1A1A1A;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.primeiro-box__titulo h1 {
+    font-size: 80px;
+    font-family: serif;
+}
+
+.primeiro-box__titulo p {
+    font-size: 28px;
+    font-style: italic;
+    font-family: serif;
+}
+
+
+/*Final Primeiro-box*/
