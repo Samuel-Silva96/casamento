@@ -104,6 +104,7 @@ section {
 
 body {
     line-height: 1;
+    background-color: #FFFFFF;
 }
 
 ol,
@@ -132,6 +133,23 @@ table {
     border-spacing: 0;
 }
 
+p {
+    margin-bottom: 0 !important;
+}
+
+
+
+/* Inicio Personalizações repetitivas */
+.subtitulos-personalizados {
+    font-size: 50px;
+    font-style: oblique;
+    font-family: serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Final Personalizações repetitivas */
+
 /* Inicio Header */
 header {
     display: flex;
@@ -139,7 +157,8 @@ header {
     background-color: #1A1A1A;
     color: #FFFFFF;
     height: 38px;
-    font-size: 15px;
+    font-size: 20px;
+    height: 5vh;
 }
 
 ul,
@@ -152,15 +171,15 @@ li {
 
 /* Final Header */
 
-/* Inicio Primeiro-box */
-
+/* Inicio Box primeira Aba */
 
 .primeiro-box {
     background-image: url(./img/Fundo.svg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    background-position: center;
     background-color: #1A1A1A;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -170,15 +189,159 @@ li {
 }
 
 .primeiro-box__titulo h1 {
-    font-size: 80px;
+    font-size: 100px;
     font-family: serif;
 }
 
 .primeiro-box__titulo p {
-    font-size: 28px;
+    padding-top: 1rem;
+    font-size: 38px;
     font-style: italic;
     font-family: serif;
 }
 
+/*Final Box primeira Aba */
 
-/*Final Primeiro-box*/
+/*Inicio Box Noivos */
+
+.box-noivos {
+    padding: 140px 0 70px 0;
+    text-align: center;
+}
+
+
+
+.box-noivos__conteudo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.box-noivos__img img {
+    height: 600px;
+}
+
+.box-noivos__texto {
+    height: 600px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding: 10px;
+    text-align: left;
+    background: #3C0300;
+    color: #FFFFFF;
+
+}
+
+.box-noivos__texto p {
+    padding: 15px;
+}
+
+/*Final Box Noivos */
+
+
+/* Inicio Box Prévia */
+.box-previa {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(./img/previa.svg), #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #1A1A1A;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Final Box Prévia */
+
+/* Inicio Box Confirmação de presença */
+
+.box-confirmacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+    background-color: #F6F6F6;
+    color: black;
+
+}
+
+.box-confirmacao__titulo h5 {
+    margin-bottom: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+.box-confirmacao__formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: #FFFFFF;
+    background-color: #3C0300;
+    border-radius: 10px;
+    width: 50vh;
+}
+
+.box-confirmacao__formulario label {
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.box-confirmacao__formulario button {
+    margin: 30px 0;
+    background-color: #008A34;
+    border-style: none;
+}
+
+/* Final Box Confirmação de presença */
+
+
+
+
+
+
+/* Inicio Box Lista de presentes */
+
+.box-lista {
+    padding: 70px 0;
+}
+
+.box-lista__cards {
+    justify-content: space-between;
+}
+
+.box-lista__card-personalizado {
+    background: #E9E9E9 !important;
+    padding: 15px !important;
+    border-style: none !important;
+    width: 22rem !important;
+}
+
+.card-personalizado__conteudo {
+    margin-top: 10px !important;
+}
+
+.card-personalizado__conteudo h5 {
+    font-size: 25px !important;
+}
+
+.card-personalizado__conteudo a {
+    margin-top: 20px;
+    border-style: none;
+    background-color: #59807A;
+    font-size: 20px;
+}
+
+/* Final Box Lista de presentes */
+
+/* Inicio Box Local do casamento */
+
+
+
+/* Final Box Local do casamento */
