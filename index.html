@@ -15,21 +15,31 @@
 </head>
 
 <body>
-    <header class="container-fluid">
-        <nav class="container">
-            <ul>
-                <li>Os noivos</li>
-                <li>Prévia</li>
-                <li>Confirmação de presença</li>
-                <li>Lista de presentes</li>
-                <li>Local</li>
-                <li>Mural de mensagem</li>
-            </ul>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#">Os Noivos</a>
+                        <a class="nav-link" href="#">Confirmação de Presença</a>
+                        <a class="nav-link" href="#">Lista de Presentes</a>
+                        <a class="nav-link" href="#">Local</a>
+                        <a class="nav-link" href="#">Mural de Mensagem</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
+
     <main>
         <!--Primeira caixa-->
-        <div class="container-fluid primeiro-box">
+        <div class=" container-fluid primeiro-box">
             <div class="container primeiro-box__titulo">
                 <h1>
                     Samuel e Sarah
@@ -54,7 +64,8 @@
                         Samuel ofereceu seu lápis para Sarah, eles sentiram uma conexão especial.
                         À medida que cresceram juntos, a amizade entre Samuel e Sarah se transformou em algo mais
                         profundo. Eles se tornaram
-                        confidentes, apoiando-se mutuamente em todas as situações da vida. Os laços que construíram ao
+                        confidentes, apoiando-se mutuamente em todas as situações da vida. Os laços que construíram
+                        ao
                         longo dos anos apenas
                         fortaleceram o amor que sentiam um pelo outro.</p>
                 </div>
@@ -151,22 +162,38 @@
         </div>
 
         <!--Quinta caixa-->
-        <div class="container box-local">
-            <div class="row row-cols-2">
-                <div class="col-6">
-                    <p> Aqui consta a localização </p>
+        <div class="container-fluid gambiarra">
+            <div class="container box-local ">
+                <div class="row">
+                    <h3 class="subtitulos-personalizados">Local do Casamento</h3>
                 </div>
-                <div class="col-6">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15357.524394343936!2d-48.0054029!3d-15.7838467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a338c098016f7%3A0x517c696b41f26111!2sMans%C3%A3o%20das%20Hort%C3%AAncias!5e0!3m2!1spt-BR!2sbr!4v1686343426519!5m2!1spt-BR!2sbr"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="box-local__dados">
+                    <div class="col box-local__cerimonia">
+                        <h4 class="cerimonia__titulo">Cerimônia e Festa</h4>
+                        <p>Mansão das Hortências - DF 095, Colônia Agrícola Cana do Reino, s/n - Ch 02 - Taguatinga,
+                            Brasília - DF, 70297-400 </p>
+                        <p>Chegada dos convidados: A partir das 16h:00 </p>
+                        <p>Início da cerimônia: 16h:30 </p>
+                        <p>Data da cerimônia: 16/09/2023 </p>
+                        <div class="box_qrcode">
+                            <p>Acesse a localização por QR Code</p>
+                            <img src="./img/qr-code.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col box-local__mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15357.524394343936!2d-48.0054029!3d-15.7838467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a338c098016f7%3A0x517c696b41f26111!2sMans%C3%A3o%20das%20Hort%C3%AAncias!5e0!3m2!1spt-BR!2sbr!4v1686343426519!5m2!1spt-BR!2sbr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
+        <!--Footer-->
+        <footer>
+            <h5>Desenvolvido por Samuel Silva </h5>
+        </footer>
 
 
     </main>
