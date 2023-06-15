@@ -105,6 +105,9 @@ section {
 
 body {
     line-height: 1;
+    background-image: url(./img/fundo-site.svg);
+    background-size: cover;
+    background-position: center;
     background-color: #FFFFFF;
 }
 
@@ -153,25 +156,6 @@ main {
 
 /* Final Personalizações repetitivas */
 
-/* Inicio Header */
-header {
-    display: flex;
-    align-items: center;
-    background-color: #1A1A1A;
-    color: #FFFFFF;
-    height: 38px;
-    font-size: 20px;
-    height: 5vh;
-}
-
-header a {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-/* Final Header */
 
 /* Inicio Box primeira Aba */
 
@@ -181,7 +165,7 @@ header a {
     background-size: cover;
     background-position: center;
     background-color: #1A1A1A;
-    height: 70vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -191,7 +175,7 @@ header a {
 }
 
 .primeiro-box__titulo h1 {
-    font-size: 100px;
+    font-size: 10rem;
     font-family: serif;
 }
 
@@ -202,6 +186,42 @@ header a {
     font-family: serif;
 }
 
+@media screen and (max-width: 1199px) {
+    .primeiro-box__titulo h1 {
+        font-size: 08rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .primeiro-box__titulo h1 {
+        font-size: 06rem;
+    }
+}
+
+@media screen and (max-width: 621px) {
+    .primeiro-box__titulo h1 {
+        font-size: 4.5rem;
+    }
+
+    @media screen and (max-width: 471px) {
+        .primeiro-box__titulo h1 {
+            font-size: 4rem;
+        }
+    }
+
+    @media screen and (max-width: 422px) {
+        .primeiro-box__titulo h1 {
+            font-size: 3.5rem;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        .primeiro-box__titulo h1 {
+            font-size: 2.9rem;
+        }
+    }
+}
+
 /*Final Box primeira Aba */
 
 /*Inicio Box Noivos */
@@ -209,9 +229,8 @@ header a {
 .box-noivos {
     padding: 140px 0 70px 0;
     text-align: center;
+
 }
-
-
 
 .box-noivos__conteudo {
     display: flex;
@@ -292,8 +311,16 @@ header a {
     flex-direction: column;
     align-items: center;
     padding: 70px 0;
-    background-color: #F6F6F6;
+    /* background-color: #F6F6F6;   */
     color: black;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 
 }
 
@@ -368,7 +395,13 @@ header a {
 /* Inicio Box Local do casamento */
 
 .gambiarra {
-    background-color: #F6F6F6;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .box-local {
