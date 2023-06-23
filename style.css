@@ -227,24 +227,27 @@ main {
 /*Inicio Box Noivos */
 
 .box-noivos {
-    padding: 140px 0 70px 0;
+    padding: 70px 0;
     text-align: center;
 
 }
 
 .box-noivos__conteudo {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
 }
 
 .box-noivos__img img {
-    height: 600px;
+    width: 200px;
+    border-radius: 50%;
 }
 
 .box-noivos__texto {
-    height: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+    height: auto;
     font-size: 1.5rem;
     line-height: 2.5rem;
     padding: 10px;
@@ -266,14 +269,6 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
-    .box-noivos__conteudo {
-        flex-direction: column;
-    }
-
-    .box-noivos__img img {
-        width: 100%;
-        height: auto;
-    }
 
     .box-noivos__texto {
         height: auto;
@@ -282,24 +277,27 @@ main {
     }
 }
 
+@media screen and (max-width: 428px) {
+    .box-noivos__img img {
+        width: calc(54% - 5%);
+        border-radius: 50%;
+    }
+}
+
 /*Final Box Noivos */
 
 
 /* Inicio Box Prévia */
+
 .box-previa {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(./img/previa.svg), #FFFFFF;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: #1A1A1A;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    color: #FFFFFF;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 70px 0;
 }
 
 /* Final Box Prévia */
@@ -314,13 +312,6 @@ main {
     /* background-color: #F6F6F6;   */
     color: black;
 
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(1.9px);
-    -webkit-backdrop-filter: blur(1.9px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
 
 }
 
