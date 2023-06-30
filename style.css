@@ -105,10 +105,8 @@ section {
 
 body {
     line-height: 1;
-    background-image: url(./img/fundo-site.svg);
-    background-size: cover;
-    background-position: center;
     background-color: #FFFFFF;
+
 }
 
 ol,
@@ -160,18 +158,18 @@ main {
 /* Inicio Box primeira Aba */
 
 .primeiro-box {
-    background-image: url(./img/Fundo.svg);
+    background-image: url(./img/fundo-teste.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: #1A1A1A;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .primeiro-box__titulo h1 {
@@ -239,21 +237,26 @@ main {
     justify-content: center;
 }
 
+.box-noivos__img {
+    display: flex;
+    flex-direction: row;
+}
+
 .box-noivos__img img {
-    width: 200px;
-    border-radius: 50%;
+    width: 100%;
+    height: 100px;
 }
 
 .box-noivos__texto {
     margin-top: 20px;
     border-radius: 10px;
-    height: auto;
+
     font-size: 1.5rem;
     line-height: 2.5rem;
     padding: 10px;
     text-align: left;
-    background: #3C0300;
-    color: #FFFFFF;
+
+    color: #000000;
 
 }
 
