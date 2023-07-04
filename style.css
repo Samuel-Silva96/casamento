@@ -106,7 +106,6 @@ section {
 body {
     line-height: 1;
     background-color: #FFFFFF;
-
 }
 
 ol,
@@ -139,9 +138,6 @@ p {
     margin-bottom: 0 !important;
 }
 
-main {
-    overflow-x: hidden
-}
 
 /* Inicio Personalizações repetitivas */
 .subtitulos-personalizados {
@@ -163,7 +159,7 @@ main {
     background-size: cover;
     background-position: center;
     background-color: #1A1A1A;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -226,11 +222,11 @@ main {
 
 .box-noivos {
     padding: 70px 0;
-    text-align: center;
+    text-align: left;
 
 }
 
-.box-noivos__conteudo {
+.box-noivos__titulo .box-noivos__conteudo {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -240,11 +236,12 @@ main {
 .box-noivos__img {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .box-noivos__img img {
-    width: 100%;
-    height: 100px;
+    width: calc(40% - 3%);
+    border-radius: 10%;
 }
 
 .box-noivos__texto {
@@ -280,10 +277,17 @@ main {
     }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 991px) {
     .box-noivos__img img {
-        width: calc(54% - 5%);
-        border-radius: 50%;
+        width: calc(50% - 3%);
+        border-radius: 10%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box-noivos__img img {
+        width: calc(100% - 5%);
+        border-radius: 10%;
     }
 }
 
