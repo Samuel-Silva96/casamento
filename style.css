@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Christmas";
+    src: local(Christmas), url(./font/christmas-calligraphy-font/ChristmasCalligraphyPersonal-3zGlM.ttf);
+}
+
+@font-face {
+    font-family: "Headstay";
+    src: local(Headstay), url(./font/headstay-font/HeadstayRegular-1GrM2.ttf);
+}
+
 html,
 body,
 div,
@@ -141,9 +151,8 @@ p {
 
 /* Inicio Personalizações repetitivas */
 .subtitulos-personalizados {
-    font-size: 50px;
-    font-style: oblique;
-    font-family: serif;
+    font-size: 30px;
+
     text-align: center;
     margin-bottom: 40px;
 }
@@ -154,7 +163,7 @@ p {
 /* Inicio Box primeira Aba */
 
 .primeiro-box {
-    background-image: url(./img/fundo-teste.png);
+    background-image: url(./img/fundo-teste2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -170,14 +179,15 @@ p {
 
 .primeiro-box__titulo h1 {
     font-size: 10rem;
-    font-family: serif;
+    font-family: "Christmas";
+
 }
 
 .primeiro-box__titulo p {
     padding-top: 1rem;
-    font-size: 38px;
-    font-style: italic;
-    font-family: serif;
+    font-size: 50px;
+    font-family: "Christmas";
+    font-weight: 600;
 }
 
 @media screen and (max-width: 1199px) {
@@ -223,7 +233,6 @@ p {
 .box-noivos {
     padding: 70px 0;
     text-align: left;
-
 }
 
 .box-noivos__titulo .box-noivos__conteudo {
@@ -231,6 +240,7 @@ p {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+
 }
 
 .box-noivos__img {
@@ -247,14 +257,11 @@ p {
 .box-noivos__texto {
     margin-top: 20px;
     border-radius: 10px;
-
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    font-family: "Headstay";
+    font-size: 3rem;
     padding: 10px;
     text-align: left;
-
     color: #000000;
-
 }
 
 .box-noivos__texto p {
@@ -296,14 +303,8 @@ p {
 
 /* Inicio Box Prévia */
 
-.box-previa {
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(1.9px);
-    -webkit-backdrop-filter: blur(1.9px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+.box-noivado {
+
     padding: 70px 0;
 }
 
@@ -316,8 +317,8 @@ p {
     flex-direction: column;
     align-items: center;
     padding: 70px 0;
-    /* background-color: #F6F6F6;   */
-    color: black;
+    background-color: #3C0300;
+    color: rgb(255, 255, 255);
 
 
 }
@@ -328,26 +329,6 @@ p {
     text-align: center;
 }
 
-.box-confirmacao__formulario {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 20px;
-    color: #FFFFFF;
-    background-color: #3C0300;
-    border-radius: 10px;
-}
-
-.box-confirmacao__formulario label {
-    font-size: 20px;
-    padding-top: 30px;
-}
-
-.box-confirmacao__formulario button {
-    margin: 30px 0;
-    background-color: #008A34;
-    border-style: none;
-}
 
 /* Final Box Confirmação de presença */
 
@@ -360,33 +341,10 @@ p {
 
 .box-lista {
     padding: 70px 0;
+    background-color: #3C0300;
+    color: #FFFFFF;
 }
 
-.box-lista__cards {
-    justify-content: space-between;
-}
-
-.box-lista__card-personalizado {
-    background: #E9E9E9 !important;
-    padding: 15px !important;
-    border-style: none !important;
-    width: 22rem !important;
-}
-
-.card-personalizado__conteudo {
-    margin-top: 10px !important;
-}
-
-.card-personalizado__conteudo h5 {
-    font-size: 25px !important;
-}
-
-.card-personalizado__conteudo a {
-    margin-top: 20px;
-    border-style: none;
-    background-color: #59807A;
-    font-size: 20px;
-}
 
 /* Final Box Lista de presentes */
 
@@ -394,12 +352,7 @@ p {
 
 .gambiarra {
     /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(1.9px);
-    -webkit-backdrop-filter: blur(1.9px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+
 }
 
 .box-local {
@@ -411,7 +364,7 @@ p {
 }
 
 .box-local__cerimonia {
-    background-color: #3C0300;
+    background-color: #013958;
     color: #FFFFFF;
 
 }
@@ -463,6 +416,12 @@ iframe {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .box_qrcode {
+        display: none;
+    }
+}
+
 /* Final Box Local do casamento */
 
 
@@ -473,4 +432,32 @@ footer {
     background: #000000;
     color: #FFFFFF;
     text-align: center;
+}
+
+
+/* divisor */
+
+.divisor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.divisor img {
+    width: calc(30% - 1%);
+
+}
+
+@media screen and (max-width: 991px) {
+    .divisor img {
+        width: calc(50% - 1%);
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .divisor img {
+        width: calc(80% - 1%);
+    }
 }
